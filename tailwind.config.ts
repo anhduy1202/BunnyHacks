@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        main_pink: "#FFD4E5",
+        main_purple: "#E0CDFF",
+        main_blue: "#EAF5FF",
+        dark_blue: "#0B2F73",
+      },
+      fontFamily: {
+        poppins: ["Poppins"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
