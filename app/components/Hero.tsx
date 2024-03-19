@@ -3,6 +3,7 @@ import React from "react";
 import Cloud from "./Clouds";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import HeroTable from "./HeroTable";
 
 const Hero: React.FC = () => {
   useGSAP(() => {
@@ -48,10 +49,11 @@ const Hero: React.FC = () => {
           Bunny
           <span className="blue-outline text-white">Hacks</span>
         </p>
-        <p className="w-[80%] text-[1.25rem] md:text-[1.5rem] font-normal  text-center md:text-start">
+        <p className="w-[80%] my-4 md:text-[1.5rem] font-normal  text-center md:text-start">
           A Spring-themed 1-week virtual webathon (hackathon but website project
           only!) hosted by ACM at CSUF.
         </p>
+        <HeroTable />
       </div>
       <img
         className="absolute right-[1em] bottom-[2rem] md:bottom-[10rem] w-[10em] md:w-[24em]"

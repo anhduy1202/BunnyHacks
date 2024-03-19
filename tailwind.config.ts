@@ -13,6 +13,7 @@ const config: Config = {
         main_purple: "#E0CDFF",
         main_blue: "#EAF5FF",
         dark_blue: "#0B2F73",
+        main_yellow: "#FEFFC5",
       },
       fontFamily: {
         poppins: ["Poppins"],
