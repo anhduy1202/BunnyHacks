@@ -8,3 +8,6 @@
     @apply [text-shadow:_0_0_5px_#0B2F73,0_0_5px_#0B2F73,0_0_5px_#0B2F73,0_0_5px_#0B2F73,0_0_5px_#0B2F73,0_0_5px_#0B2F73,0_0_5px_#0B2F73,0_0_5px_#0B2F73,0_0_5px_#0B2F73,0_0_5px_#0B2F73];
   }
 }
+.shadow-none {
+  text-shadow: none;
+}

@@ -16,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="from-main_pink to-main_purple overflow-x-hidden overflow-y-auto bg-gradient-to-b">
-        {children}
-      </body>
+      <body className=" overflow-x-hidden overflow-y-auto">{children}</body>
     </html>
   );
 }

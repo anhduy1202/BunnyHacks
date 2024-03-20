@@ -9,7 +9,7 @@ const HeroTable = () => {
         <p>WHO</p>
       </div>
       <div className="gap-2 flex bg-white flex-col col-start-2 col-span-6 md:text-[1.5rem] font-normal p-2 md:w-[70%]">
-        <p className="">March 24th - March 31st</p>
+        <p className="">March 31st - April 7th</p>
         <p className="">Virtual</p>
         <p className="">CSUF Students only</p>
       </div>
