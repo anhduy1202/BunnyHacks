@@ -1,6 +1,7 @@
 import BodyHero from "./components/BodyHero";
-import EggSeparator from "./components/EggSeparator";
+import EggSeparator from "./components/EggAnimation";
 import Hero from "./components/Hero";
+import Prizes from "./components/Prizes";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
       >
         <BodyHero />
         <EggSeparator />
+        <div id="prizeSection" className="">
+          <Prizes />
+        </div>
       </section>
     </main>
   );
