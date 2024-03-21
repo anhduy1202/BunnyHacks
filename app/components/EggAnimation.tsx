@@ -9,7 +9,7 @@ const EggSeparator = () => {
     gsap.registerPlugin(ScrollTrigger);
     // Setup the animation for the eggs
     gsap.to("#egg1Md", {
-      x: -800, // Move egg1 to the left
+      x: -600, // Move egg1 to the left
       scrollTrigger: {
         trigger: "#eggSection",
         start: "top center",
@@ -17,22 +17,8 @@ const EggSeparator = () => {
         scrub: true,
       },
     });
-    // Animation for the line separator
-    gsap.fromTo(
-      "#eggSeparatorLineMd",
-      { scaleX: 0, transformOrigin: "center center" },
-      {
-        scaleX: 190,
-        scrollTrigger: {
-          trigger: "#eggSection",
-          start: "top center",
-          end: "bottom center",
-          scrub: true,
-        },
-      },
-    );
     gsap.to("#egg2Md", {
-      x: 800, // Move egg2 to the right
+      x: 600, // Move egg2 to the right
       scrollTrigger: {
         trigger: "#eggSection",
         start: "top center",
@@ -68,7 +54,7 @@ const EggSeparator = () => {
       "#eggSeparatorLineMd",
       { scaleX: 0, transformOrigin: "center center" },
       {
-        scaleX: 190,
+        scaleX: 140,
         scrollTrigger: {
           trigger: "#eggSection",
           start: "top center",
