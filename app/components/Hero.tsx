@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Cloud from "./Clouds";
+import Cloud from "./Animations/Clouds";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import HeroTable from "./HeroTable";

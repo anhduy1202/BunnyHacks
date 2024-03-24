@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import Eggs from "./Eggs";
+import Eggs from "../Eggs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -28,7 +28,7 @@ const EggSeparator = () => {
     });
     // MOBILE
     gsap.to("#egg1", {
-      x: -200, // Move egg1 to the left
+      x: -140, // Move egg1 to the left
       scrollTrigger: {
         trigger: "#eggSection",
         start: "top center",
@@ -41,7 +41,7 @@ const EggSeparator = () => {
       "#eggSeparatorLine",
       { scaleX: 0, transformOrigin: "center center" },
       {
-        scaleX: 45,
+        scaleX: 30,
         scrollTrigger: {
           trigger: "#eggSection",
           start: "top center",
@@ -64,7 +64,7 @@ const EggSeparator = () => {
       },
     );
     gsap.to("#egg2", {
-      x: 200, // Move egg2 to the right
+      x: 140, // Move egg2 to the right
       scrollTrigger: {
         trigger: "#eggSection",
         start: "top center",
@@ -122,7 +122,7 @@ export const EggPrizes = () => {
       "#pinkEgg",
       { x: 0, rotation: 0, transformOrigin: "bottom" },
       {
-        rotation: -35,
+        rotation: -25,
         x: -40,
         transformOrigin: "bottom",
         scrollTrigger: {
@@ -137,7 +137,7 @@ export const EggPrizes = () => {
       "#yellowEgg",
       { x: 15, rotation: -45, transformOrigin: "bottom" },
       {
-        rotation: 45,
+        rotation: 40,
         x: 50,
         transformOrigin: "bottom",
         scrollTrigger: {
@@ -151,9 +151,9 @@ export const EggPrizes = () => {
   }, []);
   return (
     <div className="flex items-center justify-center">
-      <Eggs src="blue_egg" id="blueEgg" custom="w-16 md:w-20 z-[8]" />
-      <Eggs src="pink_egg" id="pinkEgg" custom="w-12 md:w-16 absolute" />
-      <Eggs src="yellow_egg" id="yellowEgg" custom="w-16 md:w-20 absolute" />
+      <Eggs src="blue_egg" id="blueEgg" custom="w-16 md:w-28 z-[8]" />
+      <Eggs src="pink_egg" id="pinkEgg" custom="w-12 md:w-24 absolute" />
+      <Eggs src="yellow_egg" id="yellowEgg" custom="w-16 md:w-28 absolute" />
     </div>
   );
 };

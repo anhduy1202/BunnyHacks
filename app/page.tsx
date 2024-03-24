@@ -1,5 +1,5 @@
 import BodyHero from "./components/BodyHero";
-import EggSeparator from "./components/EggAnimation";
+import EggSeparator from "./components/Animations/EggAnimation";
 import Hero from "./components/Hero";
 import Prizes from "./components/Prizes";
 
