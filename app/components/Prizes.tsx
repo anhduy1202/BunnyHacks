@@ -94,7 +94,7 @@ const Prizes = () => {
             return (
               <div
                 key={prize.id}
-                className={`${prize.color} p-2 rounded-md md:text-[1.5rem] font-semibold`}
+                className={`${prize.color} p-2 rounded-md text-[1.25rem] md:text-[1.5rem] font-semibold`}
               >
                 <div className="flex items-center p-2">
                   <img
@@ -102,12 +102,16 @@ const Prizes = () => {
                     src={`${prize.image}.svg`}
                     alt={prize.image}
                   />
-                  <div className="ml-4 flex flex-col">
+                  <div className="ml-8 flex flex-col">
                     <p>{prize.title}</p>
-                    <p className="font-normal text-[1.25rem]">{prize.prize}</p>
-                    <p className="font-normal text-[1.25rem]">
+                    {prize.prize.length > 1 && (
+                      <li className="text-black font-normal text-[1rem] md:text-[1.25rem]">
+                        {prize.prize}
+                      </li>
+                    )}
+                    <li className="text-black font-normal text-[1rem] md:text-[1.25rem]">
                       Bunnyhacks {prize.title} Discord role
-                    </p>
+                    </li>
                   </div>
                 </div>
               </div>
