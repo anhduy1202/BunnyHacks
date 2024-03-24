@@ -5,7 +5,7 @@ import Prizes from "./components/Prizes";
 
 export default function Home() {
   return (
-    <main className="font-poppins flex min-h-screen flex-col">
+    <main className="overflow-x-hidden font-poppins flex min-h-screen flex-col">
       <Hero />
       <section
         id="eggSection"
