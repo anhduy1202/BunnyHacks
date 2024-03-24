@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
       });
   }, []);
   return (
-    <section className="relative text-dark_blue bg-main_blue flex min-h-[800px] md:min-h-[1000px] flex-col items-center font-bold">
+    <section className="overflow-x-hidden relative text-dark_blue bg-main_blue flex min-h-[800px] md:min-h-[1000px] flex-col items-center font-bold">
       <Cloud top="top-[1em]" left="left-48 md:block hidden" />
       <Cloud top="top-[8em]" left="left-14 md:block hidden" />
       <Cloud top="top-[1em]" left="left-[42rem] md:block hidden" />

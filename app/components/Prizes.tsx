@@ -8,21 +8,21 @@ const Prizes = () => {
   const prizes = [
     {
       id: "1st",
-      color: "#FF8888",
+      color: "bg-[#FF8888]",
       title: "1st Place",
       prize: "JBL G03 Speaker",
       image: "orange_miffy",
     },
     {
       id: "2nd",
-      color: "#B7D784",
+      color: "bg-[#B7D784]",
       title: "2nd Place",
       prize: "7Leaves Free Drink Giftcard",
       image: "orange_miffy",
     },
     {
       id: "3rd",
-      color: "#7F93EA",
+      color: "bg-[#7F93EA]",
       title: "3rd Place",
       prize: "",
       image: "pink_miffy",
@@ -94,7 +94,7 @@ const Prizes = () => {
             return (
               <div
                 key={prize.id}
-                className={`bg-[${prize.color}] p-2 rounded-md md:text-[1.5rem] font-semibold`}
+                className={`${prize.color} p-2 rounded-md md:text-[1.5rem] font-semibold`}
               >
                 <div className="flex items-center p-2">
                   <img

@@ -42,6 +42,7 @@ const EggSeparator = () => {
       { scaleX: 0, transformOrigin: "center center" },
       {
         scaleX: 30,
+        duration: 1,
         scrollTrigger: {
           trigger: "#eggSection",
           start: "top center",
