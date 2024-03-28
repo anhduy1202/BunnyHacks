@@ -2,6 +2,9 @@ import BodyHero from "./components/BodyHero";
 import EggSeparator from "./components/Animations/EggAnimation";
 import Hero from "./components/Hero";
 import Prizes from "./components/Prizes";
+import Vote from "./components/Vote";
+import FAQs from "./components/FAQs";
+import Social from "./components/Social";
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
         <div id="prizeSection" className="">
           <Prizes />
         </div>
+        <Vote />
+        <FAQs />
+        <Social />
       </section>
     </main>
   );

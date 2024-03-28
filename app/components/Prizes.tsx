@@ -18,7 +18,7 @@ const Prizes = () => {
       color: "bg-[#B7D784]",
       title: "2nd Place",
       prize: "7Leaves Free Drink Giftcard",
-      image: "orange_miffy",
+      image: "blue_miffy",
     },
     {
       id: "3rd",
@@ -37,7 +37,7 @@ const Prizes = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 2,
+        duration: 1,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "#prizeMainSection",
@@ -55,7 +55,7 @@ const Prizes = () => {
       {
         x: 0,
         opacity: 1,
-        duration: 2,
+        duration: 1,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "#prizeMainSection",
@@ -98,7 +98,7 @@ const Prizes = () => {
               >
                 <div className="flex items-center p-2">
                   <img
-                    className="w-20"
+                    className="w-20 h-20"
                     src={`${prize.image}.svg`}
                     alt={prize.image}
                   />
