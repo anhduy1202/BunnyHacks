@@ -5,6 +5,7 @@ import Prizes from "./components/Prizes";
 import Vote from "./components/Vote";
 import FAQs from "./components/FAQs";
 import Social from "./components/Social";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Vote />
         <FAQs />
         <Social />
+        <Footer />
       </section>
     </main>
   );

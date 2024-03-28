@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import Cloud from "./Animations/Clouds";
+import Link from "next/link";
 
 const Social = () => {
   useEffect(() => {
@@ -34,28 +35,26 @@ const Social = () => {
       <p className="blue-outline font-bold text-white text-[2rem] md:text-[3.5rem]">
         Join Our Discord!
       </p>
-      <div className="mt-32 md:mt-48 relative">
-        <Cloud top="top-[1em]" left="left-0 z-[10] md:block hidden" />
-        <Cloud top="top-[8em]" left="right-[30em] md:block hidden" />
-        <Cloud top="top-[1em]" left="right-[-20em]" />
-        <Cloud top="top-[8em]" left="right-[-10em]" />
-        <img
-          id="ear1"
-          src="rabbit_ear.svg"
-          alt="Bunny Ear"
-          className="w-16 md:w-28 transform scaleX(-1) absolute top-[-60px] left-8 md:left-10 md:top-[-120px]"
-        />
-        <img
-          id="ear2"
-          src="rabbit_ear.svg"
-          alt="Bunny Ear"
-          className="w-16 md:w-28 absolute top-[-60px] right-8 md:right-10 md:top-[-120px]"
-        />
-        <img
-          src="discord.svg"
-          alt="Discord logo"
-          className="w-52 md:w-[22rem] relative"
-        />
+      <div id="social" className="mt-32 md:mt-48 relative">
+        <Link href="/discord">
+          <img
+            id="ear1"
+            src="rabbit_ear.svg"
+            alt="Bunny Ear"
+            className="w-16 md:w-28 transform scaleX(-1) absolute top-[-60px] left-8 md:left-10 md:top-[-120px]"
+          />
+          <img
+            id="ear2"
+            src="rabbit_ear.svg"
+            alt="Bunny Ear"
+            className="w-16 md:w-28 absolute top-[-60px] right-8 md:right-10 md:top-[-120px]"
+          />
+          <img
+            src="discord.svg"
+            alt="Discord logo"
+            className="w-52 md:w-[22rem] relative"
+          />
+        </Link>
       </div>
     </section>
   );
