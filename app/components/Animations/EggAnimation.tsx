@@ -77,7 +77,7 @@ const EggSeparator = () => {
   return (
     <div className="flex items-center justify-center">
       {/* For Mobile */}
-      <Eggs src="egg" id="egg1" custom="w-6 md:hidden" />
+      <Eggs src="egg" id="egg1" custom="w-6 md:hidden absolute" />
       <div
         id="eggSeparatorLine"
         className="md:hidden absolute h-1 w-2 bg-[#EAF5FF]"

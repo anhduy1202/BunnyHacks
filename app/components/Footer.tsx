@@ -31,7 +31,7 @@ const Footer = () => {
       <div className=" z-[10] w-[100vw] md:min-h-[28em] relative">
         <img
           src="/base2.svg"
-          className="z-[-1] absolute bottom-0"
+          className="z-[-1] w-screen absolute bottom-0"
           alt="grass footer"
         />
         <img
@@ -47,7 +47,7 @@ const Footer = () => {
         <Eggs
           src="blue_egg"
           id="footerBlueEgg"
-          custom="w-16 md:w-32 top-[-10em] md:top-0 rotate-[15deg] translate-x-[-50%] left-[65%] z-[-10] absolute"
+          custom="w-16 md:w-32 top-[-10em]  md:top-0 rotate-[15deg] translate-x-[-50%] left-[65%] z-[-10] absolute"
         />
         <Eggs
           src="pink_egg"
