@@ -6,6 +6,7 @@ import Vote from "./components/Vote";
 import FAQs from "./components/FAQs";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
+import ScoringCriteria from "./components/ScoringCriteria";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       >
         <BodyHero />
         <EggSeparator />
+        <div id="critSection" className="">
+          <ScoringCriteria />
+        </div>
         <div id="prizeSection" className="">
           <Prizes />
         </div>

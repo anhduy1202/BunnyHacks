@@ -31,8 +31,8 @@ const Social = () => {
     );
   }, []);
   return (
-    <section className="faq mx-12 text-dark_blue flex flex-col justify-center my-10 md:my-14 items-center ">
-      <p className="blue-outline font-bold text-white text-[2rem] md:text-[3.5rem]">
+    <section className="mx-12 text-dark_blue flex flex-col justify-center my-10 md:my-14 items-center ">
+      <p className="blue-outline font-bold text-white text-[2rem] md:text-[3.5rem] text-center">
         Join Our Discord!
       </p>
       <div id="social" className="mt-32 md:mt-48 relative">

@@ -32,8 +32,14 @@ const Hero: React.FC = () => {
     <section className="overflow-x-hidden relative text-dark_blue bg-main_blue flex min-h-[800px] md:min-h-[1000px] flex-col items-center font-bold">
       <Cloud top="top-[1em]" left="left-48 md:block hidden" />
       <Cloud top="top-[8em]" left="left-14 md:block hidden" />
-      <Cloud top="top-[1em]" left="left-[42rem] md:block hidden" />
-      <Cloud top="top-[8em]" left="left-[52rem] md:block hidden" />
+      <Cloud
+        top="top-[1em]"
+        left="lg:left-[28rem] left-[42rem] md:block hidden"
+      />
+      <Cloud
+        top="top-[8em]"
+        left="lg:left-[36rem] left-[52rem] md:block hidden"
+      />
       <Cloud top="top-[1em]" left="right-[30em] md:block hidden" />
       <Cloud top="top-[8em]" left="right-[22em]" />
       <Cloud top="top-[1em]" left="right-[-5em]" />
