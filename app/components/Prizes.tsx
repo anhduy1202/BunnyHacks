@@ -80,7 +80,7 @@ const Prizes = () => {
           <p className="text-dark-blue font-bold text-[1.5rem] md:text-[2rem]">
             BunnyHacks Prizes
           </p>
-          <p className="mt-4 mb-12 text-black text-[1.25rem]">
+          <p className="mt-4 mb-12 text-black md:text-[1.25rem]">
             Join for a chance to win some cool tech gadgets <br />
             and some spring themed goodies!
           </p>

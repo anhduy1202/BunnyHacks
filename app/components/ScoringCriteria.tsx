@@ -1,10 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const ScoringCriteria = () => {
-  const critRef = useRef<any>();
   const criterias = [
     {
       id: "c1",
@@ -56,48 +55,42 @@ const ScoringCriteria = () => {
         end: "bottom center",
       },
     });
-    tl.fromTo(
+    tl.to(
       "#c1",
+
       {
-        height: 0,
-      },
-      {
-        height: critRef.current.offsetHeight,
+        height: 192,
         duration: 1,
       },
     )
-      .fromTo(
+      .to(
         "#c2",
         {
-          height: 0,
-        },
-        {
-          height: critRef.current.offsetHeight,
+          height: 192,
           duration: 1,
         },
-        "+=0.1",
+        ">",
       )
-      .fromTo(
+      .to(
         "#c3",
         {
-          height: 0,
-        },
-        {
-          height: critRef.current.offsetHeight,
+          height: 192,
           duration: 1,
         },
-        "+=0.1",
+        ">",
       )
-      .fromTo(
+      .to(
         "#c4",
         {
-          height: 0,
-        },
-        {
-          height: critRef.current.offsetHeight,
+          height: 192,
           duration: 1,
         },
-      );
+        ">",
+      )
+      .to("#c5", {
+        height: 192,
+        duration: 1,
+      });
   }, []);
   return (
     <section
@@ -113,7 +106,6 @@ const ScoringCriteria = () => {
         Scoring Criteria
       </p>
       <p className="mt-4 font-semibold md:text-[1.25rem] text-black text-center">
-        {" "}
         Because it's public vote, please be fair and vote for project that
         matches these criteria
       </p>
@@ -122,11 +114,10 @@ const ScoringCriteria = () => {
           return (
             <div key={crit.id} className="flex items-start gap-12 ">
               <div
-                ref={critRef}
                 id={crit.id}
-                className={`h-48 w-6 ${idx == 0 ? "rounded-t-2xl" : idx == criterias.length - 1 ? "rounded-b-2xl" : ""} ${crit.bgColor}`}
+                className={`h-0 w-2 md:w-6 ${idx == 0 ? "rounded-t-2xl" : idx == criterias.length - 1 ? "rounded-b-2xl" : ""} ${crit.bgColor}`}
               ></div>
-              <div className="mt-4 flex flex-col md:w-[720px]">
+              <div className="mt-4 flex flex-col w-[240px] md:w-[720px]">
                 <p
                   className={`${crit.textColor} font-semibold text-[1,25rem] md:text-[1.5rem]`}
                 >
