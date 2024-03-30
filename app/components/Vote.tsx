@@ -8,7 +8,8 @@ const Vote = () => {
         Public Vote
       </p>
       <p className="mt-8 font-bold text-[1.25rem] md:text-[1.5rem] text-center">
-        Click the button below to cast your votes!
+        Voting starts from April 8th-14th, click the button below to cast your
+        votes!
       </p>
       <Link
         target="_blank"
