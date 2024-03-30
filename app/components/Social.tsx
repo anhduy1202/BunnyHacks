@@ -35,7 +35,7 @@ const Social = () => {
       <p className="blue-outline font-bold text-white text-[2rem] md:text-[3.5rem] text-center">
         Join Our Discord!
       </p>
-      <div id="social" className="mt-32 md:mt-48 relative">
+      <div id="social" className="mt-32 md:mt-48 relative flex flex-col items-center">
         <Link href="/discord">
           <img
             id="ear1"
@@ -55,7 +55,14 @@ const Social = () => {
             className="w-52 md:w-[22rem] relative"
           />
         </Link>
+
       </div>
+      <Link
+        href="/discord"
+        className="md:hidden mt-24 text-center text-dark_blue font-bold text-[1.25rem]"
+      >
+        bunnyhacks.acmcsuf.com/discord
+      </Link>
     </section>
   );
 };

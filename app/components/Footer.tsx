@@ -61,7 +61,7 @@ const Footer = () => {
         />
         <Link
           href="/discord"
-          className="text-center text-dark_blue font-bold md:text-[2.25rem] translate-x-[-50%] top-[-4em] md:top-48 absolute left-[50%]"
+          className="hidden md:block text-center text-dark_blue font-bold md:text-[2.25rem] translate-x-[-50%] top-[-4em] md:top-48 absolute left-[50%]"
         >
           bunnyhacks.acmcsuf.com/discord
         </Link>
@@ -69,6 +69,9 @@ const Footer = () => {
           Click the link above to join ACM discord, look for bunnyhacks channel
           and get updated on the event and more!
         </p>
+        <Link target="_blank" href={"https://github.com/anhduy1202/BunnyHacks"} className="text-center md:text-[1.5rem] text-black font-medium translate-x-[-50%] top-[-4em] md:top-[24rem] absolute left-[50%]">
+          Source Code
+        </Link>
       </div>
     </footer>
   );
