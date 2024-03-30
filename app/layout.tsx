@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden overflow-y-auto">{children}</body>
+      <body className="overflow-x-hidden overflow-y-visible">{children}</body>
     </html>
   );
 }
