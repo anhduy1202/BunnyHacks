@@ -60,7 +60,7 @@ const Footer = () => {
           custom="w-16 md:w-32 top-[-10em] right-4 md:top-[-5em] md:right-4 z-[-10] rotate-[-45deg] absolute"
         />
         <Link
-          href="bunnyhacks.acmcsuf.com/discord"
+          href="/discord"
           className="text-center text-dark_blue font-bold md:text-[2.25rem] translate-x-[-50%] top-[-4em] md:top-48 absolute left-[50%]"
         >
           bunnyhacks.acmcsuf.com/discord

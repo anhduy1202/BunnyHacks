@@ -17,8 +17,12 @@ const BodyHero = () => {
         <p>Registration for CSUF students only with valid CSUF email</p>
         <p>Webathon starts at 8AM March 31st, ends at 11:45PM April 7th</p>
         <p>
-          Submit your project on <strong>BunnyHacks Devpost</strong> before the
-          deadline!
+          Submit your project on{" "}
+          <Link href={"https://bunnyhack.devpost.com/"} target="_blank">
+            {" "}
+            <strong>BunnyHacks Devpost</strong>{" "}
+          </Link>{" "}
+          before the deadline!
         </p>
       </div>
     </div>
